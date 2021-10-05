@@ -56,12 +56,12 @@ p{
   font-family: paprika, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
+.main-header {
   padding: 1rem;
   background-color: #142713;
 }
 
-header .header-navigation {
+.main-header .header-navigation {
   min-height: 10vh;
   display: flex;
   flex-wrap: wrap;
@@ -71,39 +71,39 @@ header .header-navigation {
   margin: 0rem auto;
 }
 
-header .header-navigation .left-side {
+.main-header .header-navigation .left-side {
   flex: 2 1 40rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-header .header-navigation .left-side h1 {
+.main-header .header-navigation .left-side h1 {
   display: flex;
   align-items: center;
 }
-header .header-navigation .left-side h1 a img {
+.main-header .header-navigation .left-side h1 a img {
   max-width: 4rem;
   max-height: 7rem;
 }
-header .header-navigation .left-side h1 a{
+.main-header .header-navigation .left-side h1 a{
   text-decoration: none;
   color: white;
   margin: 0rem 0.5rem;
 }
-header .header-navigation .left-side h1:hover{
+.main-header .header-navigation .left-side h1:hover{
   text-shadow: 0rem 0rem 0.5rem white;
 }
-header .header-navigation .right-side {
+.main-header .header-navigation .right-side {
   flex: 1 1 40rem;
 }
-header .header-navigation .right-side ul{
+.main-header .header-navigation .right-side ul{
   display: flex;
   height: 100%;
   justify-content: space-around;
   align-items: center;
   list-style: none;
 }
-header .header-navigation .right-side ul li a {
+.main-header .header-navigation .right-side ul li a {
   font-family: Merriweather;
   font-size: 1.6rem;
   text-decoration: none;
@@ -111,7 +111,7 @@ header .header-navigation .right-side ul li a {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
-header .header-navigation .right-side ul li a:hover{
+.main-header .header-navigation .right-side ul li a:hover{
   text-shadow: 0rem 0rem 0.5rem white;
 }
 
@@ -144,9 +144,72 @@ main .first-section button {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
 }
 
 main .first-section button:hover {
   background-color: #349655aa;
   color: #ffffffaa;
+}
+
+.location-section {
+  height: 100vh;
+  background: linear-gradient(#00000077,transparent), url("../img/new-york-page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.location-head {
+  text-align: center;
+
+  padding:10% ;
+}
+.location-head h2 {
+  text-decoration: underline;
+  padding: 3rem 0rem;
+}
+
+.cloud {
+  width: 60%;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+}
+
+.moving-cloud-1 {
+  animation: cloudAnimation 4s ease-in-out;
+  -webkit-animation: cloudAnimation 4s ease-in-out;
+}
+
+.moving-cloud-2 {
+  animation: cloudAnimation 3s ease-in-out;
+  z-index: -1;
+  top: 10rem;
+  -webkit-animation: cloudAnimation 3s ease-in-out;
+}
+
+@keyframes cloudAnimation{
+  from{
+    transform: translate(10%, -20%)  ;
+    -webkit-transform: translate(10%, -20%)  ;
+    -moz-transform: translate(10%, -20%)  ;
+    -ms-transform: translate(10%, -20%)  ;
+    -o-transform: translate(10%, -20%)  ;
+}
+  to {
+    transform: translate(0%,0%);
+    -webkit-transform: translate(0%,0%);
+    -moz-transform: translate(0%,0%);
+    -ms-transform: translate(0%,0%);
+    -o-transform: translate(0%,0%);
+}
 }

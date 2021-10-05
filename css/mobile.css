@@ -7,3 +7,10 @@ header {
 header .header-navigation .left-side {
     justify-content: center;
 }
+.location-section {
+    height: 100vh;
+    background-position: center;
+}
+.cloud {
+  width: 80%;
+}

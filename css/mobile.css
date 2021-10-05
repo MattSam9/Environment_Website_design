@@ -1,0 +1,9 @@
+html {
+    font-size: calc(30% + 0.2vw);
+}
+header {
+    min-height: 6rem;
+}
+header .header-navigation .left-side {
+    justify-content: center;
+}

@@ -8,4 +8,13 @@ header .header-navigation .left-side {
     justify-content: flex-start;
     align-items: center;
 }
-
+.first-section {
+    max-height: 90vh;
+    background-position: bottom;
+}
+.location-section  {
+    height: 100vh;
+}
+main .benefits {
+height: 100vh;
+}

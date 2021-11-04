@@ -1,0 +1,10 @@
+.main-header .header-navigation .left-side {
+flex: 2 1 40rem;
+justify-content: flex-start;
+}
+
+main .first-section {
+min-height: 100vh;
+background-position: bottom;
+text-shadow: 0.2rem 0.2rem 0.5rem white;
+}

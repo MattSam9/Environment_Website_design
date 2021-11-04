@@ -74,7 +74,6 @@ p{
 .main-header .header-navigation .left-side {
   flex: 2 1 40rem;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 .main-header .header-navigation .left-side h1 {
@@ -110,9 +109,26 @@ p{
   color: white;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
+  background-image: linear-gradient(45deg, #2D4219, #5B9321, #2D4219);
+  background-repeat: no-repeat;
+  background-position-x: -100rem;
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
 }
 .main-header .header-navigation .right-side ul li a:hover{
-  text-shadow: 0rem 0rem 0.5rem white;
+  color: white;
+  text-shadow: 0rem 0rem 0.5rem rgb(255, 239, 96);
+  background-position-x: 0rem;
 }
 
 main .first-section {
@@ -157,7 +173,7 @@ main .first-section button:hover {
 }
 
 .location-section {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(#00000077,transparent), url("../img/new-york-page.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -170,15 +186,27 @@ main .first-section button:hover {
 
 .location-head {
   text-align: center;
-
   padding:10% ;
 }
 .location-head h2 {
   text-decoration: underline;
   padding: 3rem 0rem;
 }
+.location-head h2:hover {
+  background-position: 0rem 0rem;
+}
+.location-head h4 {
+  background: radial-gradient(#77251e, #206877, #20776b);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
 
 .cloud {
+  pointer-events: none;
   width: 60%;
   position: absolute;
   top: 0rem;
@@ -192,10 +220,117 @@ main .first-section button:hover {
 
 .moving-cloud-2 {
   animation: cloudAnimation 3s ease-in-out;
+  -webkit-animation: cloudAnimation 3s ease-in-out;
   z-index: -1;
   top: 10rem;
-  -webkit-animation: cloudAnimation 3s ease-in-out;
 }
+
+main .benefits {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(128, 128, 128, 0.5),transparent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.benefits header {
+  width: 100%;
+  flex-basis: 10rem;
+  min-height: 20rem;
+  background: url("../img/in\ focus.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.benefits header h2 {
+  text-shadow: 0.2rem 0.2rem 0.5rem white;
+  color: black;
+}
+.benefits .cards {
+  display: flex;
+  flex-direction: column;
+  min-width: 95%;
+  margin: 0rem auto;
+}
+.benefits .cards .card-gang {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 3rem;
+}
+.benefits .cards .card-gang .card  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex: 1 1 46%;
+  margin: 1rem 2rem;
+}
+.benefits .cards .card-gang .card .image {
+  flex: 1 1 20rem;
+  width: 20vw;
+  max-height: 40vh;
+  box-shadow: 0rem 0rem 0.2rem black, 0rem 0rem 2rem black;
+}
+.benefits .cards .card-gang .card-1 .image {
+  background: url("../img/pexels-pixabay-235615.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.benefits .cards .card-gang .card-2 .image {
+  background: url("../img/pexels-singkham-1108572.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.benefits .cards .card-gang .card-3 .image {
+  background: url("../img/pexels-pixabay-33044.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.benefits .cards .card-gang .card-4 .image {
+  background: url("../img/pexels-skitterphoto-9198.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.benefits .cards .card-gang .card .content {
+  flex: 1 1 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2rem;
+}
+.benefits .cards .card-gang .card .content .item-title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #555;
+}
+.benefits .cards .card-gang .card .content .item-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.4rem;
+}
+.benefits .cards .card-gang .card .content .item-links a {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  flex: 1 1 5rem;
+  text-decoration: none;
+  color: black;
+  font-family: paprika, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  border-bottom: 0.1rem solid gray;
+}
+.benefits .cards .card-gang .card .content .item-links a:hover{
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
+}
+
+
+
 
 @keyframes cloudAnimation{
   from{

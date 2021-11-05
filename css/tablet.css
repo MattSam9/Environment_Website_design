@@ -16,5 +16,19 @@ header .header-navigation .left-side {
     height: 100vh;
 }
 main .benefits {
-height: 100vh;
+    height: fit-content;
+}
+.benefits .cards .card-gang{
+    align-items: center;
+    flex-basis: 30vh;
+    margin-top: 3rem;
+}
+.benefits .cards .card-gang .card .image {
+    flex-basis: 25vw;
+
+}
+
+.contact .contact-wrapper {
+    min-width: 80vw;
+    min-height: 55vh;
 }

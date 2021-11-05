@@ -17,3 +17,8 @@ header .header-navigation .left-side {
 .cloud {
   width: 80%;
 }
+
+.contact .contact-wrapper {
+    min-width: 90vw;
+    min-height: 50vh;
+}

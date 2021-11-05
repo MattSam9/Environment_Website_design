@@ -58,7 +58,11 @@ p{
 
 .main-header {
   padding: 1rem;
-  background-color: #142713;
+  background: linear-gradient(hsl(140, 20%, 21%),#373f30);
+  position: sticky;
+  top: 0rem;
+  left: 0rem;
+  z-index: 3;
 }
 
 .main-header .header-navigation {
@@ -150,7 +154,7 @@ main .first-section h3 {
   text-shadow: 0rem 0rem 0.2rem white;
 }
 
-main .first-section button {
+main .first-section button, .form-submit {
   padding: 1rem 4rem;
   background: #349655;
   border: none;
@@ -226,7 +230,6 @@ main .first-section button:hover {
 }
 
 main .benefits {
-  min-height: 100vh;
   width: 100%;
   background: linear-gradient(rgba(128, 128, 128, 0.5),transparent);
   display: flex;
@@ -253,7 +256,7 @@ main .benefits {
   display: flex;
   flex-direction: column;
   min-width: 95%;
-  margin: 0rem auto;
+  margin: 2rem auto;
 }
 .benefits .cards .card-gang {
   display: flex;
@@ -268,7 +271,7 @@ main .benefits {
   margin: 1rem 2rem;
 }
 .benefits .cards .card-gang .card .image {
-  flex: 1 1 20rem;
+  flex: 1 1 25rem;
   width: 20vw;
   max-height: 40vh;
   box-shadow: 0rem 0rem 0.2rem black, 0rem 0rem 2rem black;
@@ -329,8 +332,75 @@ main .benefits {
   text-shadow: 0.1rem 0.1rem 0.3rem black;
 }
 
-
-
+.contact {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(#f6ecc1b4,#201e1eb7), url("../img/pexels-hope-15286.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact .contact-wrapper {
+  width: 50%;
+  min-height: 40vh;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  background: rgba(53, 53, 53, 0.5);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.contact .contact-wrapper header {
+  margin: 3rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0.1rem 0.1rem 0.3rem gold;
+}
+.contact .contact-wrapper form {
+  width: 100%;
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.1rem gold;
+  font-size: 3rem;
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.form-name, .form-email{
+  width: 100%;
+  margin: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-email {
+  margin-bottom: 6rem;
+}
+.contact .contact-wrapper form input {
+  width: 65%;
+  margin: 1rem 2rem;
+  padding: 1rem 5rem 1rem 0.5rem;
+  color: black;
+}
+.contact .contact-wrapper form button{
+  width: 100%;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: #2e502944;
+  position: absolute;
+  bottom: 0rem;
+  font-size: 2rem;
+}
+.form-submit:hover {
+  text-shadow: 0.1rem 0.1rem 0.4rem gold;
+}
 
 @keyframes cloudAnimation{
   from{

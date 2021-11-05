@@ -58,7 +58,8 @@ p{
 
 .main-header {
   padding: 1rem;
-  background: linear-gradient(hsl(140, 20%, 21%),#373f30);
+  background: linear-gradient(hsla(140, 20%, 21%, 0.95),#373f30ee), url("../img/banner.jpg");
+  background-size: cover;
   position: sticky;
   top: 0rem;
   left: 0rem;
@@ -343,7 +344,7 @@ main .benefits {
 }
 .contact .contact-wrapper {
   width: 50%;
-  min-height: 40vh;
+  min-height: 60vh;
   margin: 3rem auto;
   display: flex;
   flex-direction: column;
@@ -401,6 +402,49 @@ main .benefits {
 .form-submit:hover {
   text-shadow: 0.1rem 0.1rem 0.4rem gold;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(#262e25ee,#323e46ee), url("../img/footer\ background.jpg");
+  background-size: cover;
+  color: white;
+}
+footer header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+footer header h2 {
+  font-size: 3rem;
+  margin: 1rem auto;
+  text-shadow: 0.1rem 0.2rem 0.2rem white;
+}
+footer ul {
+  min-width: 50%;
+  margin: 2rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer ul li a img {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+footer ul li a img:hover {
+  transform: scale(1.5,1.5);
+  -webkit-transform: scale(1.5,1.5);
+  -moz-transform: scale(1.5,1.5);
+  -ms-transform: scale(1.5,1.5);
+  -o-transform: scale(1.5,1.5);
+}
+
 
 @keyframes cloudAnimation{
   from{

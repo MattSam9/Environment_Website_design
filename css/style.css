@@ -343,8 +343,8 @@ main .benefits {
   background-position: center;
 }
 .contact .contact-wrapper {
-  width: 50%;
-  min-height: 60vh;
+  width: 40%;
+  min-height: 50vh;
   margin: 3rem auto;
   display: flex;
   flex-direction: column;

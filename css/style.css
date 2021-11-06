@@ -217,17 +217,17 @@ main .first-section button:hover {
   top: 0rem;
   right: 0rem;
 }
-
+/*
 .moving-cloud-1 {
   animation: cloudAnimation 4s ease-in-out;
   -webkit-animation: cloudAnimation 4s ease-in-out;
 }
-
+*/
 .moving-cloud-2 {
-  animation: cloudAnimation 3s ease-in-out;
-  -webkit-animation: cloudAnimation 3s ease-in-out;
+/*  animation: cloudAnimation 3s ease-in-out;
+  -webkit-animation: cloudAnimation 3s ease-in-out;*/
   z-index: -1;
-  top: 10rem;
+
 }
 
 main .benefits {
@@ -445,7 +445,7 @@ footer ul li a img:hover {
   -o-transform: scale(1.5,1.5);
 }
 
-
+/*
 @keyframes cloudAnimation{
   from{
     transform: translate(10%, -20%)  ;
@@ -462,3 +462,4 @@ footer ul li a img:hover {
     -o-transform: translate(0%,0%);
 }
 }
+*/
